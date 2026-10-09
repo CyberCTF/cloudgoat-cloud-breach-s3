@@ -1,0 +1,8 @@
+{
+  "title": "CloudGoat: cloud breach S3",
+  "description": "A CloudGoat scenario by Rhino Security Labs, deployed into your own AWS account: as an anonymous outsider, abuse a misconfigured reverse proxy to query the EC2 metadata service, take the instance profile's keys, then find and exfiltrate the cardholder data in a private S3 bucket.",
+  "question": "From the reverse proxy alone, retrieve the cardholder data stored in the private S3 bucket.",
+  "category": "MISC",
+  "difficulty": 1,
+  "evidence_kind": "SECRET"
+}
