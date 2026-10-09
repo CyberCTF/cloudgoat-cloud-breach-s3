@@ -57,5 +57,15 @@
       }
     ]
   },
-  "message": null
+  "cloud": {
+    "provider": "aws",
+    "terraform": "terraform",
+    "outputs": [
+      "account_id",
+      "target_ip"
+    ],
+    "inputs": [],
+    "hourly_usd": 0.02
+  },
+  "message": "The target is a web server at http://{{ cloud.outputs.target_ip }}/ in account\n{{ cloud.outputs.account_id }}. You start with nothing: no AWS credentials. Goal: the cardholder\ndata in the scenario's private S3 bucket. Cheat sheet:\napp/cloudgoat/scenarios/aws/cloud_breach_s3/cheat_sheet.md\n"
 }
