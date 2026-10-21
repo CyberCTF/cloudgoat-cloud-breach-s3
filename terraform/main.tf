@@ -53,7 +53,7 @@ data "external" "ssh_key" {
 }
 
 module "scenario" {
-  source                  = "../app/cloudgoat/scenarios/aws/cloud_breach_s3/terraform"
+  source                  = "./scenario"
   profile                 = var.profile
   region                  = var.region
   cgid                    = "cloud_breach_s3_cgid${random_string.cgid.result}"
